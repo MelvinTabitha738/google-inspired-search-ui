@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            color: #202124;
+        }
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 6px;
+            height: 60px;
+            box-sizing: border-box;
+        }
+        .header a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: rgba(0,0,0,0.87);
+            font-size: 15px;
+            line-height: 24px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin-top: calc(100vh / 2 - 280px);
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 92px;
+            max-height: 290px;
+            height: calc(100vh - 560px);
+        }
+        .logo img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            object-position: center bottom;
+            width: auto;
+        }
+        .search-container {
+            width: 100%;
+            max-width: 584px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        .search-bar {
+            display: flex;
+            align-items: center;
+            height: 44px;
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            margin: 0 auto;
+            width: auto;
+            max-width: 584px;
+            box-shadow: none;
+            padding: 0 14px;
+        }
+        .search-bar:hover, .search-bar:focus-within {
+            box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            border-color: rgba(223,225,229,0);
+        }
+        .search-icon {
+            color: #9aa0a6;
+            height: 20px;
+            width: 20px;
+            margin-right: 13px;
+        }
+        
+        .search-input {
+            flex: 1;
+            border: none;
+            outline: none;
+            height: 34px;
+            font-size: 16px;
+        }
+        .search-buttons {
+            display: flex;
+            justify-content: center;
+            padding-top: 18px;
+        }
+        .search-buttons button {
+            background-color: #f4f7fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #4c5153;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            box-shadow:3px 3px 3px #a5acb1;
+        }
+        .search-buttons button:hover {
+            box-shadow: 0 1px 1px rgba(0,0,0,.1);
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #202124;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="image_search.html">Images</a>
+        <a href="advanced_search.html">Advanced Search</a>
+    </div>
+    
+    <div class="content">
+        <div class="logo">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+        
+        <div class="search-container">
+            <form action="https://google.com/search">
+                <div class="search-bar">
+                    <svg class="search-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#9aa0a6"></path>
+                    </svg>
+                    <input type="text" name="q" class="search-input">
+                </div>
+                <div class="search-buttons">
+                    <button type="submit">Google Search</button>
+                    <button type="submit" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    </form>
+    
+    
+    
+</body>
+</html>
